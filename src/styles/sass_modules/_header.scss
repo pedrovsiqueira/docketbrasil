@@ -1,0 +1,10 @@
+.header {
+  height: 56px;
+  background: transparent url('../../assets/header.svg') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  padding: 8px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
