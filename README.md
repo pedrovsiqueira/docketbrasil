@@ -14,6 +14,7 @@ The challenge was to create a Frontend application of a document request system.
 - [ReactJS](https://pt-br.reactjs.org/) - A JavaScript library for building user interfaces.
 - [SASS](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 - [React-Hook-Form](https://react-hook-form.com/) - Performant, flexible and extensible forms with easy-to-use validation.
+- [JSON-SERVER](https://github.com/typicode/json-server) - Get a full fake REST API with zero coding in less than 30 seconds.
 
 <!-- USAGE EXAMPLES -->
 
