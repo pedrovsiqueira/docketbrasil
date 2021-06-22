@@ -28,6 +28,8 @@ The challenge was to create a Frontend application of a document request system.
 
 ### Prerequisites
 
+https://www.loom.com/share/1dbf819838704aa3a65454ebd469d771
+
 In order to run this project locally you will need to:
 
 - Clone and install this repository - https://github.com/pedrovsiqueira/docketbrasil
