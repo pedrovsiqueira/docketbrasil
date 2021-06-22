@@ -1,5 +1,4 @@
-const App = () => {
-  return <h1>Hello DocketBrasil</h1>;
-};
+import { CreateDocumentPage } from './Pages/CreateDocumentPage/CreateDocumentPage';
 
+const App = () => <CreateDocumentPage />;
 export default App;
