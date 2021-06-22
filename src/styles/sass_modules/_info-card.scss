@@ -1,0 +1,35 @@
+.info-card {
+  max-width: 1300px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    p {
+      background-color: $info-background;
+      padding: 3px 8px;
+      position: relative;
+      padding-left: 1.5rem;
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: $info-circle;
+        border-radius: 50%;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 1rem;
+    display: flex;
+    & > p {
+      margin-right: 2.8125rem;
+    }
+  }
+}
