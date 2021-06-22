@@ -1,0 +1,38 @@
+.document-card {
+  margin-bottom: 1rem;
+
+  hr {
+    margin: 0.86rem 0;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4rem;
+
+    &__control {
+      display: flex;
+      flex-direction: column;
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      p:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__combined {
+      display: flex;
+      flex-direction: row;
+      > p {
+        margin-right: 2.07rem;
+      }
+    }
+  }
+}
