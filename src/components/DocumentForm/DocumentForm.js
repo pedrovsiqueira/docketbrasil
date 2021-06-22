@@ -82,7 +82,11 @@ export const DocumentForm = ({ setDocuments }) => {
                   mask="999.999.999-99"
                   error={errors.cpf?.message}
                   {...register('cpf', {
-                    required: 'Campo obrigatório'
+                    required: 'Campo obrigatório',
+                    pattern: {
+                      value: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/,
+                      message: 'Digite um cpf válido'
+                    }
                   })}
                 />
 
@@ -111,7 +115,11 @@ export const DocumentForm = ({ setDocuments }) => {
                   className="larger-input"
                   error={errors.cnpj?.message}
                   {...register('cnpj', {
-                    required: 'Campo obrigatório'
+                    required: 'Campo obrigatório',
+                    pattern: {
+                      value: /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/,
+                      message: 'Digite um cnpj válido'
+                    }
                   })}
                 />
 
@@ -139,7 +147,11 @@ export const DocumentForm = ({ setDocuments }) => {
               mask="99999-999"
               error={errors.cep?.message}
               {...register('cep', {
-                required: 'Campo obrigatório'
+                required: 'Campo obrigatório',
+                pattern: {
+                  value: /\d{5}-\d{3}/,
+                  message: 'Digite um cep válido'
+                }
               })}
             />
 
@@ -188,7 +200,7 @@ export const DocumentForm = ({ setDocuments }) => {
               />
             </div>
 
-            <Button type="submit" disabled={isSubmitting} color="blue">
+            <Button type="submit" disabled={isSubmitting} color="blue" isLoading={isSubmitting}>
               Criar documento
             </Button>
           </div>
