@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+
+  @media (max-width: 620px) {
+    font-size: 75%;
+  }
+
+  @media (max-width: 530px) {
+    font-size: 62.5%;
+  }
+
+  @media (max-width: 413px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background: $thm-background;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+.is-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+}
+
+.mb {
+  &-12 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  &-16 {
+    margin-bottom: 1rem !important;
+  }
+}
+
+.Toastify__toast--success {
+  background-color: $toast-success-color !important;
+}
+
+.Toastify__toast-container {
+  width: 418px;
+}
+
+.toast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-right: 0.75rem;
+  }
+}
