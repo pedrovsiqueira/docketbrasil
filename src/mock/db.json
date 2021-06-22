@@ -1,0 +1,17 @@
+{
+  "documents": [
+    {
+      "document": "Certidão de óbito",
+      "type": "Natural Person",
+      "cpf": "111.111.111-11",
+      "name": "João da Silva",
+      "cep": "74565-019",
+      "street": "Avenida Rio Branco",
+      "number": "122",
+      "city": "Goiânia",
+      "state": "GO",
+      "date": "2021-06-22T03:23:26.397Z",
+      "id": 1
+    }
+  ]
+}
