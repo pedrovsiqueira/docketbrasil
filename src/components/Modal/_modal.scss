@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+
+  @media (max-width: 650px) {
+    padding: 5rem;
+  }
 }
 
 .react__modal__content {
@@ -35,6 +39,10 @@
     height: 5.3rem;
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 530px) {
+      padding: 1rem;
+    }
 
     button:first-child {
       margin-right: 1.5rem;

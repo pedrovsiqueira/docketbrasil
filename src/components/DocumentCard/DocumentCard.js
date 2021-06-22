@@ -43,7 +43,7 @@ export const DocumentCard = ({ document, setDocuments }) => {
   };
 
   return (
-    <Card width="46.875rem" height="15.5rem" padding="24px" className="document-card" key={id}>
+    <Card padding="1.5rem" className="document-card" key={id}>
       <div className="document-card__header">
         <h2>{documentName}</h2>
         <ButtonIcon onClick={toggleIsModalOpen} Icon={RemoveIcon} className="btn--tools-icon" />
@@ -56,7 +56,11 @@ export const DocumentCard = ({ document, setDocuments }) => {
           </p>
           {isNaturalPerson ? (
             <>
-              <p>Nome: {name}</p>
+              <p className="is-ellipsis" data-tip={name}>
+                Nome: {name}
+              </p>
+              <ReactTooltip data-for={name} effect="solid" place="top" />
+
               <p>CPF: {cpf}</p>
             </>
           ) : (

@@ -13,7 +13,6 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    padding-right: 4rem;
 
     &__control {
       display: flex;
@@ -30,9 +29,6 @@
     &__combined {
       display: flex;
       flex-direction: row;
-      > p {
-        margin-right: 2.07rem;
-      }
     }
   }
 }

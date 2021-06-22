@@ -1,7 +1,7 @@
 import { Card } from '../';
 
 export const InfoCard = () => (
-  <Card width="100%" height="12.0625rem" padding="24px" margin="1rem 0px" className="info-card">
+  <Card width="100%" height="12.0625rem" padding="1.5rem" margin="1rem 0px" className="info-card">
     <div className="info-card__header">
       <h2>Lead: Documento para criar contrato</h2>
       <p>Em andamento</p>

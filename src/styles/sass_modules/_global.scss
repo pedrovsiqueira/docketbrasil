@@ -73,6 +73,10 @@ p {
   white-space: nowrap;
   overflow: hidden;
   width: 170px;
+
+  @media (max-width: 530px) {
+    width: 100px;
+  }
 }
 
 .mb {

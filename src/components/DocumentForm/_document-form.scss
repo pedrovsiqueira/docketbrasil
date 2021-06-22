@@ -1,4 +1,6 @@
 .container {
+  margin-bottom: 3.125rem;
+
   h2 {
     padding: 16px 25px;
   }
@@ -6,8 +8,50 @@
   &__form {
     padding: 1.5rem;
 
+    @media (max-width: 920px) {
+      display: flex;
+      justify-content: space-between;
+
+      > div {
+        flex: 1;
+        margin-right: 2rem;
+
+        @media (max-width: 555px) {
+          margin-right: unset;
+        }
+      }
+    }
+
     p {
       font-weight: bold;
+    }
+
+    @media (max-width: 555px) {
+      flex-direction: column;
+    }
+
+    &__address {
+      @media (max-width: 920px) {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin-bottom: 0.5rem;
+        }
+
+        button {
+          align-self: flex-end;
+          margin-right: 1.25rem;
+
+          @media (max-width: 720px) {
+            margin-right: 0;
+          }
+
+          @media (max-width: 555px) {
+            align-self: center;
+          }
+        }
+      }
     }
   }
 }
@@ -15,7 +59,17 @@
 .form-control {
   display: flex;
 
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
+
   & > div {
     margin-right: 1.5rem;
+  }
+}
+
+.larger-input {
+  @media (max-width: 555px) {
+    max-width: unset !important;
   }
 }

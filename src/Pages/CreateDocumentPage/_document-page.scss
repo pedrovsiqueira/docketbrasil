@@ -13,5 +13,22 @@
   &__control {
     display: flex;
     gap: 1rem;
+
+    @media (max-width: 920px) {
+      flex-direction: column;
+    }
+
+    > div {
+      width: 50%;
+      min-width: 46.875rem;
+
+      @media (max-width: 1250px) {
+        min-width: 30rem;
+      }
+
+      @media (max-width: 920px) {
+        width: 100%;
+      }
+    }
   }
 }

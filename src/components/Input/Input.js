@@ -3,7 +3,20 @@ import ReactInputMask from 'react-input-mask';
 
 export const Input = forwardRef(
   (
-    { label, name, placeholder, value, onChange, onBlur, error, mask, type, width, maxWidth },
+    {
+      label,
+      name,
+      placeholder,
+      value,
+      onChange,
+      onBlur,
+      error,
+      mask,
+      type,
+      width,
+      maxWidth,
+      className
+    },
     ref
   ) => {
     const props = {
@@ -19,7 +32,9 @@ export const Input = forwardRef(
 
     return (
       <div
-        className={`field ${error ? 'field__input-container--error' : ''}`}
+        className={`field ${error ? 'field__input-container--error' : ''} ${
+          className ? className : ''
+        }`}
         style={{ width, maxWidth }}
       >
         <label htmlFor={name} className="field__label">
