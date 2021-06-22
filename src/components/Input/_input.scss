@@ -3,6 +3,12 @@
   flex-direction: column;
   position: relative;
 
+  @media (max-width: 600px) {
+    select {
+      padding: 0 0 0 0.5rem;
+    }
+  }
+
   p {
     color: $input-error;
     font-size: 0.75rem;
@@ -19,14 +25,7 @@
     transition: border 200ms ease, color 200ms ease;
     margin-bottom: 1.5rem;
     height: 2.5rem;
-
-    @media (max-width: 620px) {
-      height: 4rem;
-    }
-
-    @media (max-width: 414px) {
-      height: 5rem;
-    }
+    min-height: 2.5rem;
 
     &::placeholder {
       color: $input-placeholder;

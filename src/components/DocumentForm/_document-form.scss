@@ -31,6 +31,10 @@
     }
 
     &__address {
+      button {
+        min-width: 137px;
+      }
+
       @media (max-width: 920px) {
         display: flex;
         flex-direction: column;
