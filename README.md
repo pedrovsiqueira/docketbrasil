@@ -6,7 +6,7 @@
 
 ## About The Project
 
-The challenge was to create a Frontend application of a document request system.
+The challenge was to create a Frontend application of a document request system. The system is responsive from 305px up.
 
 ### Built With:
 
