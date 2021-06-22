@@ -1,0 +1,21 @@
+.empty__card__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+    background: transparent url('../../assets/document-bg.svg') 0% 0% no-repeat padding-box;
+  }
+
+  p {
+    margin-top: 1rem;
+    color: $empty-text;
+  }
+}
