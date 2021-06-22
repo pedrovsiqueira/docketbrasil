@@ -1,0 +1,21 @@
+.container {
+  h2 {
+    padding: 16px 25px;
+  }
+
+  &__form {
+    padding: 1.5rem;
+
+    p {
+      font-weight: bold;
+    }
+  }
+}
+
+.form-control {
+  display: flex;
+
+  & > div {
+    margin-right: 1.5rem;
+  }
+}
