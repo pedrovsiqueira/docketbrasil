@@ -65,7 +65,11 @@ export const DocumentCard = ({ document, setDocuments }) => {
             </>
           ) : (
             <>
-              <p>Razão Social: {corporateName}</p>
+              <p className="is-ellipsis" data-tip={corporateName}>
+                Razão Social: {corporateName}
+              </p>
+              <ReactTooltip data-for={corporateName} effect="solid" place="top" />
+
               <p>CNPJ: {cnpj}</p>
             </>
           )}
